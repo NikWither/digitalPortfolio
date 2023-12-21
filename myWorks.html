@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш аккаунт</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_first_section">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+                <p>Digital Portfolio</p>
+            </div>
+            <div class="settings">
+                <p>Пользователь 1</p>
+                <img src="img/profile_photo.jpg" alt="" class="profile_photo">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main_first_section">
+            <aside class="aside">
+                <nav class="nav">
+                    <ul class="list_items">
+                        <li class="item"><a href="#!" class="item_link">Главная</a></li>
+                        <li class="item"><a href="#!" class="item_link">Расписание</a></li>
+                        <li class="item"><a href="#!" class="item_link">Образцы документов</a></li>
+                        <li class="item"><a href="#!" class="item_link active-link">Мои работы</a></li>
+                        <li class="item"><a href="#!" class="item_link">Контакты</a></li>
+                        <li class="item"><a href="#!" class="item_link">Блог</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <!-- секция с работами -->
+            <div class="main_info_section">
+                <div class="section_info">
+                    <div class="my_works">Мои работы</div>
+                    <button class="add_works">Добавить</button>
+                </div>
+                <!-- сама работа -->
+                <div class="works_section">
+                    <div class="works_name">
+                        <div class="first_work_title">Перевод из MP3 в PDF и обратно</div>
+                        <button class="edit_work">Редактировать</button>
+                    </div>
+                    <div class="works_description">
+                        <p>Данная программа позволяет перевести pdf файл в mp3 на английский или русский язык. Работает и в обратном направлении.</p>
+                    </div>
+                    <div class="works_esmation">
+                        <div class="raiting">
+                            <p>Рейтинг</p>
+                            <img src="img/Star 5.png" alt="">
+                            <img src="img/Star 5.png" alt="">
+                            <img src="img/Star 5.png" alt="">
+                            <img src="img/Star 5.png" alt="">
+                            <img src="img/Star 5.png" alt="">
+                        </div>
+                        <div class="views">Просмотры <span class="counterOfViews">101</span></div>
+                    </div>
+                    <div class="works_link">
+                        Ссылка на гитхаб
+                    </div>
+                </div>
+            </div>
+            <!-- модальное окно -->
+            <div class="modal_window" id="module_window">
+                <div class="modal_box">
+                  <button class="btn_closed" id="closed_modal_window">Закрыть</button>
+                  <h2>Добавить работу</h2>
+                  <form id="myForm">
+                    <label for="workTitle">Название работы:</label>
+                    <input type="text" id="workTitle" name="jobTitle" required>
+                  
+                    <label for="works_description_add">Описание работы:</label>
+                    <textarea id="works_description_add" name="works_description_add" rows="4" required></textarea>
+                  
+                    <button class="publishWork">Добавить</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/account.js"></script>
+</body>
+</html>

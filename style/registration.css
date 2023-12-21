@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(50, 49, 49);
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .psevdo-title {
+    color: rgb(50, 49, 49);
+    font-size: 30px;
+    font-weight: 700;
+  }
+  
+  .form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container label {
+    margin-bottom: 10px;
+  }
+  
+  .form-container input {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .form-container button {
+    padding: 12px;
+    background-color: #56a5fe;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .form-container button:hover {
+    background-color: #2573cd;
+  }
+  
+  .form-container p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  #registerForm {
+    display: none;
+  }
+
+  .openAccount {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  width: 80px;
+  }

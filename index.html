@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portfolio</title>
+    <link rel="stylesheet" href="style/registration.css">
+</head>
+<body>
+    <h1>Digital Portfolio</h1>
+    <div class="form-container" id="loginForm">
+        <h2 class="psevdo-title">Вход</h2>
+        <form>
+          <label for="login">Логин</label>
+          <input type="text" id="login" name="login" required>
+      
+          <label for="password">Пароль</label>
+          <input type="password" id="password" name="password" required>
+      
+          <button type="button" id="btn-enter"><a href="myWorks.html" class="openAccount">Войти в аккаунт</a></button>
+        </form>
+      
+        <p>Если нет аккаунта, <a href="#" id="btn-create-account">создать</a></p>
+      </div>
+      
+      <div class="form-container" id="registerForm" style="display: none;">
+        <h2>Регистрация</h2>
+        <form>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="registerLogin">Логин</label>
+          <input type="text" id="registerLogin" name="registerLogin" required>
+      
+          <label for="registerPassword">Пароль</label>
+          <input type="password" id="registerPassword" name="registerPassword" required>
+      
+          <button type="button" id="registration">Зарегистрироваться</button>
+          <button type="button" id="btn-back" onclick="showLoginForm()">Назад</button>
+        </form>
+      </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

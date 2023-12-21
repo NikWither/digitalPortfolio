@@ -1,0 +1,234 @@
+.header {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 25px;
+}
+.header_first_section {
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo p {
+    margin-left: 15px;
+    font-size: 35px;
+    font-weight: 650;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.settings p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 25px;
+}
+
+.main_first_section {
+    display: flex;
+    justify-content: flex-start;
+}
+.aside {
+}
+.nav {
+    width: 200px;
+}
+.list_items {
+}
+.item + .item {
+    margin-top: 19px;
+}
+.item_link {
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+}
+.main_info_section {
+    margin-left: 70px;
+}
+
+.active-link {
+    color: #0e8eae;
+}
+
+.profile_photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 40%;
+}
+
+/* секция с работами  */
+.main_info_section {
+    display: flex;
+    flex-direction: column;
+}
+.section_info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.my_works {
+    font-size: 35px;
+    font-weight: 600;
+}
+.add_works {
+    padding: 6px 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+
+    background-color: #0e8eae;
+    border-radius: 10px;
+}
+.works_section {
+    margin-top: 50px;
+    width: 700px;
+}
+.works_name {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #db2b10;
+    border-radius: 0px 20px 20px 0px;
+    opacity: 80%;
+    color: white;
+    padding: 15px;
+    width: 700px;
+    position: relative;
+}
+.first_work_title {
+    font-size: 22px;
+}
+.edit_work {
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    margin-left: 70px;
+    font-size: 15px;
+}
+.works_description {
+    margin-top: 15px;
+    padding: 5px;
+}
+.works_esmation {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.raiting {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.raiting p {
+    padding-right: 12px;
+}
+
+.raiting img {
+    margin-left: 3px;
+}
+
+.views {
+    margin-left: 15px;
+}
+
+.works_link {
+    margin-top: 5px;
+}
+
+/* ===========================================модальное окно =========================================== */
+
+.modal_window {
+    position: fixed; /* фиксирует элемент */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 998;
+    background-color: rgba(0, 0, 0, 0.3); /* 30% прозрачности */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto; /* возможность скролить по оси y*/
+    /* СКРЫВАЕМ ОКНО */
+    visibility: hidden;
+    opacity: 0;
+    /* Добавляем анимацию */
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.modal_box {
+    position: relative;
+    max-width: 600px;
+    padding: 45px;
+    z-index: 1;
+    background-color: white;
+    margin: 30px 15px; /* Отступы модального окна от body*/
+    box-shadow: 0px 0px 17px -7px rgba(34, 60, 80, 0.2);
+    /* Уменьшаем модалку для анимации выпрыгивания */
+    transform: scale(0);
+    transition: transform 0.8s;
+}
+  /* Добавляем класс к модальному окну */
+.modal_window.open {
+    visibility: visible;
+    opacity: 1;
+}
+  /* Если у модал виндов будет класс open, то добавим свойства модал бокс */
+.modal_window.open .modal_box {
+    transform: scale(1);
+}
+  
+.btn_closed {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+.modal_box h2 {
+    color: #0e8eae;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+.publishWork {
+    padding: 8px 12px;
+    background-color: #0e8eae;
+    color: white;
+    font-size: 15px;
+}
+  
